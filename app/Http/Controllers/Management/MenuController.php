@@ -53,7 +53,8 @@ class MenuController extends Controller
                 'image' => 'nullable|file|image|mimes:jpeg,png,jpg|max:5000'
             ]);
             $imageName = date('mdYHis').uniqid().'.'.$request->image->extension();
-            $request->image->move(public_path('menu_images'), $imageName);
+               $request->image->storeAs('public/images', $imageName);
+//            $request->image->move(public_path('menu_images'), $imageName);
         }
         //save information to Menus table
         $menu = new Menu();

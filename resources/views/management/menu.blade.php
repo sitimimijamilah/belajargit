@@ -34,7 +34,7 @@
                 <td>{{$menu->name}}</td>
                 <td>{{ number_format ($menu->price)}}</td>
                 <td>
-                  <img src="{{asset('menu_images')}}/{{$menu->image}}" alt="{{$menu->name}}" width="120px" height="120px" class="img-thumbnail">
+                  <img src="{{asset('storage/images')}}/{{$menu->image}}" alt="{{$menu->name}}" width="120px" height="120px" class="img-thumbnail">
                 </td>
                 <td>{{$menu->description}}</td>
                 <td>{{$menu->category->name}}</td>

@@ -52,4 +52,3 @@ Route::middleware(['auth', 'VerifyAdmin'])->group(function(){
     // Export to excel
     Route::get('/report/show/export', 'Report\ReportController@export');
 });
-
